@@ -1,3 +1,4 @@
+import { Course } from './../model/course';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
+
+  courses: Course[] = [
+    { _id: '1', name: 'Angular', category: 'front-end'}
+  ];
+  displayedColumns = ['name', 'category'];
 
 }
